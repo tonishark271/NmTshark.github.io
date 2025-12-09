@@ -33,8 +33,9 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: Asia/Ho_Chi_Minh
 
-url: "https://tonishark271.github.io"
-baseurl: "/NmTshark.github.io"
+url: "https://NmTshark.github.io"
+baseurl: ""   # trống
+
 
 
 include:
