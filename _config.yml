@@ -62,7 +62,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-
+  - jekyll-remote-theme 
 author:
   name   : "Nguyen Manh Toan"
   avatar : "/assets/images/avatar.png"
