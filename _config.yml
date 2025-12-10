@@ -21,7 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 
 github_username: NmTshark
-minimal_mistakes_skin: default
+minimal_mistakes_skin: dark
 search: true
 
 # Build settings
@@ -66,11 +66,11 @@ plugins:
 author:
   name   : "Nguyen Manh Toan"
   avatar : "/assets/images/avatar.png"
-  bio    : "This is my blog & writeup, where i write how to solve the challenge CTF and build personal project like Wazuh "
+  bio    : "This is my personal blog and writeup space, where I share detailed walkthroughs for CTF challenges and document my personal cybersecurity projects, including SIEM, forensics, and more."
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/nmtshark271"
+      url: "https://github.com/NmTshark"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-f"
       url: "https://www.facebook.com/MTonne2710"
@@ -79,7 +79,7 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/NmTshark"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-f"
       url: "https://www.facebook.com/MTonne2710"
