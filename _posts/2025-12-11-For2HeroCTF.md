@@ -18,8 +18,8 @@ tags:
 # 2. Giải nén và xem cấu trúc thư mục
   Sau khi extract ta được 2 thư mục chính là:
   {% raw %}{% capture path-highlight %}
-     /var/log
-     /var/www/glpi
+  * `/var/log`
+  * `/var/www/glpi`
   {% endcapture %}{% endraw %}
   <div class="notice notice--info">{% raw %}{{ path-highlight | markdownify }}{% endraw %}</div>
   Đây là hệ thống **GLPI** – một ứng dụng ITSM thường dính lỗi upload hoặc RCE.  
