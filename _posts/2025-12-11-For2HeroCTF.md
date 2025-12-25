@@ -13,14 +13,22 @@ tags:
 
 ---
 #  Mô tả thử thách
- The director of Hogwarts got his account compromised. The last time he logged on legitimately was from 192.168.56.230 (pensive.hogwarts.local). Investigate to identify how his account got compromised from this server. Please find the following information to go forward in this case: - Absolute path of the file which led to the compromise. - Absolute path of the file used by the attacker to retrieve Albus' account. - The second file stores two pieces of information. The 3rd flag part is the value of the second field of the second piece of information. The findings have to be separated by a ";". 
+ > "The director of Hogwarts got his account compromised. The last time he logged on legitimately was from 192.168.56.230 (pensive.hogwarts.local). Investigate to identify how his account got compromised from this server. Please find the following information to go forward in this case:
+> - Absolute path of the file which led to the compromise.
+> - Absolute path of the file used by the attacker to retrieve Albus' account.
+> - The second file stores two pieces of information. The 3rd flag part is the value of the second field of the second piece of information.
+> The findings have to be separated by a `;`."
 
+**Tóm tắt yêu cầu:** Chúng ta cần tìm 3 mảnh thông tin:
+1.  Đường dẫn tuyệt đối của file gây ra sự cố (bị ghi đè/lợi dụng).
+2.  Đường dẫn tuyệt đối của file mà attacker dùng để lưu/lấy tài khoản.
+3.  Giá trị trường thứ 2 trong bộ dữ liệu thứ 2 tìm được.
 # Phân tích tổng quan
   Sau khi extract ta được 2 thư mục chính là:
   * `/var/log`
   * `/var/www/glpi`
  
-  Từ thử thách trước là bài Forensics 01  có được thông tin IP Address của attacker là 192.168.56.200 nên tôi đã bắt đầu với việc tìm kiếm chuỗi IP này trong các log và đã  tìm thấy dấu hiệu đáng ngờ đầu tiên trong file `var/www/glpi/ajax/fileupload.php` thông qua dòng log dưới đây:
+  Từ thử thách trước là bài ***Forensics 01***  có được thông tin IP Address của attacker là 192.168.56.200 nên tôi đã bắt đầu với việc tìm kiếm chuỗi IP này trong các log và đã  tìm thấy dấu hiệu đáng ngờ đầu tiên trong file `var/www/glpi/ajax/fileupload.php` thông qua dòng log dưới đây:
   ```
  192.168.56.200 - - [22/Nov/2025:23:03:49 +0000] "POST /ajax/fileupload.php?_method=DELETE&_uploader_picture%5B%5D=setup.php HTTP/1.1" 200 742 "-" "python-requests/2.32.5"
   ```
