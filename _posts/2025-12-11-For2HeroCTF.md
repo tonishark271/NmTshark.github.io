@@ -23,6 +23,7 @@ tags:
 1.  Đường dẫn tuyệt đối của file gây ra sự cố (bị ghi đè/lợi dụng).
 2.  Đường dẫn tuyệt đối của file mà attacker dùng để lưu/lấy tài khoản.
 3.  Giá trị trường thứ 2 trong bộ dữ liệu thứ 2 tìm được.
+
 # Phân tích tổng quan
   Sau khi extract ta được 2 thư mục chính là:
   * `/var/log`
