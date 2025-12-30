@@ -8,7 +8,6 @@ tags:
   - Forensics
 ---
 
-> [!INFO] Thông tin bài thi
 > **Chủ đề:** Phân tích lưu lượng mạng và Dịch ngược Mã độc Python (C2 Traffic Decryption)
 > **Mục tiêu:** Phân tích file capture.pcap, xác định hoạt động đáng ngờ, dịch ngược mã độc và giải mã nội dung giao tiếp giữa nạn nhân (victim) và máy chủ điều khiển (C2 Server)
 ---
